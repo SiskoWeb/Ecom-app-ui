@@ -1,5 +1,5 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { COLORS } from '../constants/theme'
+import { COLORS, SIZES } from '../constants/theme'
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Home from '../src/screens/Home';
@@ -28,7 +28,7 @@ function TabNavigator() {
                 tabBarInactiveTintColor: 'grey',
                 tabBarStyle: {
                     paddingVertical: 5, backgroundColor: COLORS.white,
-                    shadowColor: 'black', position: 'absolute', height: 60,
+                    shadowColor: 'black', position: 'absolute', height: SIZES.xLarge + 20,
                 },
                 tabBarLabelStyle: { paddingBottom: 3, display: 'none' },
                 headerShown: false

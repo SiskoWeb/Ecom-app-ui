@@ -10,7 +10,7 @@ import { ActivityIndicator } from 'react-native';
 
 export default function LoadingScreen() {
 
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
 
 
 

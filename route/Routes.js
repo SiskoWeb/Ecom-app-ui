@@ -2,7 +2,8 @@ import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import TabNavigator from "./TabNavigation";
-import ProductPage from "../src/screens/productPage";
+import ProductScreen from "../src/screens/ProductScreen";
+
 
 const Stack = createNativeStackNavigator();
 const Routes = () => {
@@ -19,7 +20,7 @@ const Routes = () => {
           <Stack.Screen
             options={{ headerShown: false }}
             name="Product"
-            component={ProductPage} />
+            component={ProductScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </>
