@@ -21,6 +21,9 @@ function TabNavigator() {
                     } else if (route.name === 'Cart') {
                         iconName = focused ? 'ios-star' : 'ios-star';
                     }
+                    else if (route.name === 'Favourite') {
+                        iconName = focused ? 'favorite-outline' : 'ifavorite-outline';
+                    }
                     // You can return any component that you like here!
                     return <Ionicons name={iconName} size={size} color={color} />;
                 },
@@ -37,6 +40,7 @@ function TabNavigator() {
         >
             <Tab.Screen name="Home" component={Home} />
             <Tab.Screen name="Cart" component={Cart} />
+            <Tab.Screen name="Favourite" component={Cart} />
         </Tab.Navigator>
     )
 }
