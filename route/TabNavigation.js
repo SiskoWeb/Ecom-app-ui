@@ -22,7 +22,7 @@ function TabNavigator() {
                         iconName = focused ? 'ios-star' : 'ios-star';
                     }
                     else if (route.name === 'Favourite') {
-                        iconName = focused ? 'favorite-outline' : 'ifavorite-outline';
+                        iconName = focused ? 'ios-star' : 'ios-star';
                     }
                     // You can return any component that you like here!
                     return <Ionicons name={iconName} size={size} color={color} />;
